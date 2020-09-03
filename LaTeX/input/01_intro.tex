@@ -1,0 +1,59 @@
+\pagestyle{plain}
+\pagenumbering{arabic}
+\chapter{Introduzione}\label{chap:intro}
+Il seguente documento si propone come relazione relativa all'esercitazione di \emph{Tecnica delle Costruzioni in C.A. e Acciaio}  del Corso di Laurea Magistrale in Ingegneria Civile presso l'Università degli Studi di Trento, riferita all'anno accademico 2019 - 2020. Di seguito è riportata una breve descrizione del fabbricato.
+\section{Descrizione dell'edificio}\label{sec:descrizioneEdificio}
+L'edificio in esame, che si trova in Provincia di Trento a una altitudine di $788\,m$ sul livello del mare, ha una struttura multipiano, portante, in cemento armato ed è composto da un interrato (garage), un piano terra adibito a negozi, un piano primo in cui sono presenti uffici aperti al pubblico, mentre il piano superiore è destinato ad uso civile residenziale - per un totale di tre piani fuori terra. Il solaio di copertura è piano, non praticabile, accessibile perciò solo dal personale addetto alla manutenzione.
+Le dimensioni massime in pianta del complesso sono di $43.15\,m \times 28.00\,m$ per un'elevazione totale fuori terra di $9.70\,m$. Le altezze di interpiano sono riportate nell'elaborato presente a pagina~\pageref{fig:sezione}. 
+In particolare, la superficie, l'altezza e quindi il volume di ogni piano sono:
+\begin{itemize}
+	\item piano interrato:
+    \begin{description}
+        \item [superficie:] $901.60\,m^2$;
+        \item [altezza:] $2.75\,m$;
+        \item[volume:] $2479.40\,m^3$ 
+    \end{description}
+	\item piano terra:
+    \begin{description}
+        \item [superficie:] $901.60\,m^2$;
+        \item [altezza:] $3.50\,m$;
+        \item[volume:] $3155.60\,m^3$ 
+    \end{description}
+	\item piano primo e piano secondo:
+		\begin{description}
+			\item [superficie:] $468.70\,m^2$;
+			\item [altezza:] $3.10\,m$;
+			\item[volume:] $1452.97\,m^3$ 
+		\end{description}
+\end{itemize}
+Il volume della sola parte fuori terra dell'opera è di circa $6062\,m^3$, mentre considerando il contributo della parte di edificio interrato, il volume totale dell'opera è di circa $8541\,m^3$.
+
+Le piante della carpenteria contengono, oltre alla nomenclatura degli elementi strutturali, anche gli interassi dei pilastri e perciò le luci delle campate di tutte le travi. La luce massima delle travi è di $6.15\,m$, misurata tra i pilastri $P17 - P18$ - che coincide peraltro con la luce massima del rispettivo solaio presente al primo impalcato. 
+Il piano primo è organizzato in modo tale che parte della superficie, in particolare la fascia più esterna, sia adibita a terrazza mentre il nucleo centrale - come detto precedentemente - è destinato ad uffici aperti al pubblico. Nonostance ciò, non sono presenti solai a sbalzo.
+
+Per maggior completezza, di seguito vengono descritte le stratigrafie dei principali solai e i pesi specifici dei materiali che compongono gli elementi: 
+\begin{itemize}
+ \item il solaio tra piano interrato e piano terra e il solaio di copertura sono realizzati con lastre tralicciate di tipo Predalle di spessore $(4+16+5)\,\si{cm}$. Il peso strutturale del solaio è di $3.60\,\si{kN}/_{\si{m^2}}$;
+ \item i \emph{solai tra piani intermedi} sono realizzati con travetti tralicciati in \emph{laterocemento} con spessore $(20+5)\,\si{cm}$. Il peso del solaio ultimato è di
+ \begin{equation*}
+  g_{1k_{solaio}} = 3.20\,\dfrac{kN}{m^2}
+ \end{equation*}
+ \item i \emph{solai interni} sono finiti all'\emph{estradosso} con un sottofondo di \emph{cls alleggerito} di spessore pari a $8\,\si{cm}$ e peso specifico $16\,kN/_{m^3}$, un \emph{massetto di allettamento} di $6\,\si{cm}$ e peso specifico $24\,kN/_{m^3}$ e infine un \emph{pavimento in ceramica} del peso di $0.50\,kN/_{m^2}$. All'\emph{intradosso} è presente $1\,\si{cm}$ di intonaco di peso specifico $20\,kN/_{m^3}$;
+ \item il solaio di copertura è finito all'estradosso con uno strato isolante di spessore $20\,cm$ (peso specifico $0.30\,kN/_{m^3}$), un massetto in calcestruzzo alleggerito di spessore medio pari a $6\,cm$ (peso specifico $18\,kN/_{m^3}$), uno strato di impermeabilizzante di peso trascurabile e uno strato di ghiaino di $10\,cm$ (peso specifico $15\,kN/_{m^3}$). All'intradosso è finito con un centimetro di intonaco;
+ \item i solai delle terrazze presenti al piano primo sono finiti all'\emph{estradosso} con uno strato \emph{isolante} di $15\,\si{cm}$ e peso specifico $0.50\,kN/_{m^3}$, uno strato di impermeabilizzante di peso trascurabile, un \emph{massetto} in calcestruzzo di spessore medio pari a $6\,\si{cm}$ e peso specifico $24\,kN/_{m^3}$ e un \emph{pavimento} di peso $0.50\,kN/_{m^2}$. Il solaio è finito all'\emph{intradosso} con intonaco di spessore $1\,\si{cm}$;
+ \item i tamponamenti perimetrali sono realizzati in muratura di laterizio di spessore $30\,\si{cm}$ e peso specifico apparente pari a $10\,kN/_{m^3}$, \emph{cappotto esterno} di spessore $12\,\si{cm}$ (peso specifico $0.20\,kN/_{m^3}$) e all'interno $1\,\si{cm}$ di \emph{intonaco} (vedi caratteristiche sopra).
+\end{itemize}
+
+
+\section{Caratteristiche geometriche}\label{sec:geomCar}
+In prima approssimazione, per il calcolo delle azioni interne e delle relative caratteristiche di sollecitazione sull'elemento strutturale - con riferimento alla relazione per il corso di \emph{Sicurezza Strutturale} dell'anno accademico 2019/2020 - sono stati considerati i seguenti valori:
+\begin{itemize}
+ \item pilastri a sezione quadrata di dimensioni $30 \times 30\,\si{cm}$;
+ \item travi in spessore di solaio con larghezza pari a $60\,\si{cm}$;
+ \item travi perimetrali di larghezza $30\,\si{cm}$ e altezza $50\,\si{cm}$;
+ \item setti di spessore $30\,\si{cm}$.
+\end{itemize}
+
+Nel capitolo successivo sono riportate le piante della carpenteria di ogni piano, con riferimento agli elementi strutturali oggetto di studio.
+
+% \cleardoublepage

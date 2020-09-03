@@ -1,0 +1,108 @@
+\documentclass[a4paper, oneside, openright, 
+%  draft
+]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\usepackage{geometry}
+\usepackage[italian]{babel}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usetikzlibrary{intersections}
+\usepackage{stanli}
+\usepackage{subfig}
+\usepackage{amsmath,amsfonts,amssymb,braket, wasysym, mathtools}
+\usepackage{graphicx} 
+\graphicspath{{img/}} %Setting the graphicspath
+\usepackage{plain}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{epsfig}
+\usepackage{environ}
+\usepackage{lipsum}
+\usepackage{siunitx}
+\usepackage[final]{pdfpages}
+% \usepackage{layouts}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage{biblatex, csquotes}
+\usepackage{tabu}
+\usepackage{bigints}
+
+\definecolor{C01}{RGB}{127,165,165}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+
+\newcommand{\contentinput}[1]{\input{input/#1}}
+
+\graphicspath{{./img/}}
+
+\newcommand{\doubleunderline}[1]{\underline{\underline{#1}}}
+
+\newenvironment{changegeometry}[1]
+{\newgeometry{#1}}
+{\cleardoublepage\restoregeometry}
+
+\newcommand{\blankpage}{\newpage\shipout\null\stepcounter{page}}%
+\def\doubleunderline#1{\underline{\underline{#1}}}%
+
+\newcommand{\sfav}{\textcolor{red}{\MakeUppercase{sf}}}%
+\newcommand{\fav}{\textcolor{green}{\MakeUppercase{f}}}%
+
+\addbibresource{input/bibliography.bib}
+
+\newcommand{\ntc }{\text{\textbf{\MakeUppercase{NTC2018} }}}
+\newcommand{\circolare }{\textbf{\MakeUppercase{Circ. n. 7} }}
+\newcommand{\ec }{\textbf{\MakeUppercase{EC2} }}
+\newcommand{\nad }{\textbf{\MakeUppercase{NAD} }}
+
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\phi}{\varphi}
+
+\usepackage{siunitx}
+
+
+\begin{document}
+\contentinput{title}
+\contentinput{toc}
+\contentinput{01_intro}
+\contentinput{02_piante}
+\contentinput{03_norme}
+\contentinput{04_materiali}
+\contentinput{05_traveFlessioneSLU}
+\contentinput{06_traveTaglioSLU}
+\contentinput{07_traveSLE}
+\contentinput{08_pilastro}
+\contentinput{09_solaio}
+\cleardoublepage
+\nocite{law:ntc2018, law:circ2019, law:ec2, book:cosenza}
+\printbibliography
+\chapter{Elaborati grafici}
+Si allegano di seguito le tavole contenente gli elaborati grafici di trave, pilastro e solaio rispettivamente.
+\end{document}
